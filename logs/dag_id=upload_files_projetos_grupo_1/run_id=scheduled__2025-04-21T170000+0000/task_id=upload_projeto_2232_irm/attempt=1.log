@@ -1,0 +1,84 @@
+[2025-04-22T20:28:16.735+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-04-22T20:28:16.748+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: upload_files_projetos_grupo_1.upload_projeto_2232_irm scheduled__2025-04-21T17:00:00+00:00 [queued]>
+[2025-04-22T20:28:16.755+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: upload_files_projetos_grupo_1.upload_projeto_2232_irm scheduled__2025-04-21T17:00:00+00:00 [queued]>
+[2025-04-22T20:28:16.757+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 1
+[2025-04-22T20:28:16.771+0000] {taskinstance.py:2890} INFO - Executing <Task(PythonOperator): upload_projeto_2232_irm> on 2025-04-21 17:00:00+00:00
+[2025-04-22T20:28:16.777+0000] {standard_task_runner.py:72} INFO - Started process 221 to run task
+[2025-04-22T20:28:16.780+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'upload_files_projetos_grupo_1', 'upload_projeto_2232_irm', 'scheduled__2025-04-21T17:00:00+00:00', '--job-id', '24', '--raw', '--subdir', 'DAGS_FOLDER/dag_projeto_grupo-01.py', '--cfg-path', '/tmp/tmpehqsc0o3']
+[2025-04-22T20:28:16.782+0000] {standard_task_runner.py:105} INFO - Job 24: Subtask upload_projeto_2232_irm
+[2025-04-22T20:28:16.830+0000] {task_command.py:467} INFO - Running <TaskInstance: upload_files_projetos_grupo_1.upload_projeto_2232_irm scheduled__2025-04-21T17:00:00+00:00 [running]> on host e50052774237
+[2025-04-22T20:28:16.894+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='arthur.lopes' AIRFLOW_CTX_DAG_ID='upload_files_projetos_grupo_1' AIRFLOW_CTX_TASK_ID='upload_projeto_2232_irm' AIRFLOW_CTX_EXECUTION_DATE='2025-04-21T17:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-04-21T17:00:00+00:00'
+[2025-04-22T20:28:16.896+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-04-22T20:28:17.157+0000] {taskinstance.py:3313} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 768, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 734, in _execute_callable
+    return ExecutionCallableRunner(
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 424, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+  File "/opt/airflow/dags/dag_projeto_grupo-01.py", line 55, in upload_files_2232_IRM
+    upload_to_blob(
+  File "/opt/airflow/dags/dag_projeto_grupo-01.py", line 24, in upload_to_blob
+    raise e
+  File "/opt/airflow/dags/dag_projeto_grupo-01.py", line 18, in upload_to_blob
+    with open(local_file_path,"rb") as data:
+FileNotFoundError: [Errno 2] No such file or directory: '/opt/airflow/dados/01. LD e CR/2232 - IRM/01. LISTA DE DOCUMENTOS/LD-2232-GR-PLN-GRC-001_R25.xlsm'
+[2025-04-22T20:28:17.171+0000] {taskinstance.py:1226} INFO - Marking task as FAILED. dag_id=upload_files_projetos_grupo_1, task_id=upload_projeto_2232_irm, run_id=scheduled__2025-04-21T17:00:00+00:00, execution_date=20250421T170000, start_date=20250422T202816, end_date=20250422T202817
+[2025-04-22T20:28:17.193+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-04-22T20:28:17.196+0000] {standard_task_runner.py:124} ERROR - Failed to execute job 24 for task upload_projeto_2232_irm ([Errno 2] No such file or directory: '/opt/airflow/dados/01. LD e CR/2232 - IRM/01. LISTA DE DOCUMENTOS/LD-2232-GR-PLN-GRC-001_R25.xlsm'; 221)
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/task/task_runner/standard_task_runner.py", line 117, in _start_by_fork
+    ret = args.func(args, dag=self.dag)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/utils/cli.py", line 116, in wrapper
+    return f(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/cli/commands/task_command.py", line 256, in _run_task_by_selected_method
+    return _run_raw_task(args, ti)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/cli/commands/task_command.py", line 341, in _run_raw_task
+    return ti._run_raw_task(
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 3006, in _run_raw_task
+    return _run_raw_task(
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 274, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 3161, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 3185, in _execute_task
+    return _execute_task(self, context, task_orig)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 768, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 734, in _execute_callable
+    return ExecutionCallableRunner(
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 424, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+  File "/opt/airflow/dags/dag_projeto_grupo-01.py", line 55, in upload_files_2232_IRM
+    upload_to_blob(
+  File "/opt/airflow/dags/dag_projeto_grupo-01.py", line 24, in upload_to_blob
+    raise e
+  File "/opt/airflow/dags/dag_projeto_grupo-01.py", line 18, in upload_to_blob
+    with open(local_file_path,"rb") as data:
+FileNotFoundError: [Errno 2] No such file or directory: '/opt/airflow/dados/01. LD e CR/2232 - IRM/01. LISTA DE DOCUMENTOS/LD-2232-GR-PLN-GRC-001_R25.xlsm'
+[2025-04-22T20:28:17.236+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 1
+[2025-04-22T20:28:17.254+0000] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-04-22T20:28:17.258+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

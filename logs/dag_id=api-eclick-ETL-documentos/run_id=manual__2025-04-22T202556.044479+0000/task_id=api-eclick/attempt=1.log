@@ -1,0 +1,19 @@
+[2025-04-22T20:25:57.499+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-04-22T20:25:57.511+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: api-eclick-ETL-documentos.api-eclick manual__2025-04-22T20:25:56.044479+00:00 [queued]>
+[2025-04-22T20:25:57.518+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: api-eclick-ETL-documentos.api-eclick manual__2025-04-22T20:25:56.044479+00:00 [queued]>
+[2025-04-22T20:25:57.521+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 1
+[2025-04-22T20:25:57.534+0000] {taskinstance.py:2890} INFO - Executing <Task(PythonOperator): api-eclick> on 2025-04-22 20:25:56.044479+00:00
+[2025-04-22T20:25:57.541+0000] {standard_task_runner.py:72} INFO - Started process 186 to run task
+[2025-04-22T20:25:57.544+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'api-eclick-ETL-documentos', 'api-eclick', 'manual__2025-04-22T20:25:56.044479+00:00', '--job-id', '22', '--raw', '--subdir', 'DAGS_FOLDER/dag_api-eclick.py', '--cfg-path', '/tmp/tmp_fano503']
+[2025-04-22T20:25:57.548+0000] {standard_task_runner.py:105} INFO - Job 22: Subtask api-eclick
+[2025-04-22T20:25:57.593+0000] {task_command.py:467} INFO - Running <TaskInstance: api-eclick-ETL-documentos.api-eclick manual__2025-04-22T20:25:56.044479+00:00 [running]> on host e50052774237
+[2025-04-22T20:25:57.648+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='arthur.lopes' AIRFLOW_CTX_DAG_ID='api-eclick-ETL-documentos' AIRFLOW_CTX_TASK_ID='api-eclick' AIRFLOW_CTX_EXECUTION_DATE='2025-04-22T20:25:56.044479+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-04-22T20:25:56.044479+00:00'
+[2025-04-22T20:25:57.650+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-04-22T20:28:26.380+0000] {job.py:229} INFO - Heartbeat recovered after 138.75 seconds
+[2025-04-22T20:28:31.434+0000] {job.py:229} INFO - Heartbeat recovered after 138.69 seconds
+[2025-04-22T20:26:28.316+0000] {python.py:240} INFO - Done. Returned value was: None
+[2025-04-22T20:26:28.325+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-04-22T20:26:28.326+0000] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=api-eclick-ETL-documentos, task_id=api-eclick, run_id=manual__2025-04-22T20:25:56.044479+00:00, execution_date=20250422T202556, start_date=20250422T202557, end_date=20250422T202628
+[2025-04-22T20:28:41.585+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-04-22T20:28:41.597+0000] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-04-22T20:28:41.601+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

@@ -1,0 +1,90 @@
+[2025-04-20T07:17:34.348+0000] {processor.py:186} INFO - Started process (PID=143) to work on /opt/airflow/dags/teste.py
+[2025-04-20T07:17:34.349+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/teste.py for tasks to queue
+[2025-04-20T07:17:34.352+0000] {logging_mixin.py:190} INFO - [2025-04-20T07:17:34.351+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/teste.py
+[2025-04-20T07:17:34.392+0000] {logging_mixin.py:190} INFO -      nomes
+0  wallace
+1   shalon
+2    italo
+3     luiz
+[2025-04-20T07:17:34.393+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/teste.py
+[2025-04-20T07:17:34.409+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/teste.py took 0.068 seconds
+[2025-04-20T07:17:54.199+0000] {processor.py:186} INFO - Started process (PID=208) to work on /opt/airflow/dags/teste.py
+[2025-04-20T07:17:54.201+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/teste.py for tasks to queue
+[2025-04-20T07:17:54.203+0000] {logging_mixin.py:190} INFO - [2025-04-20T07:17:54.203+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/teste.py
+[2025-04-20T07:17:54.232+0000] {logging_mixin.py:190} INFO -      nomes
+0  wallace
+1   shalon
+2    italo
+3     luiz
+[2025-04-20T07:17:54.233+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/teste.py
+[2025-04-20T07:17:54.245+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/teste.py took 0.053 seconds
+[2025-04-20T07:18:20.789+0000] {processor.py:186} INFO - Started process (PID=273) to work on /opt/airflow/dags/teste.py
+[2025-04-20T07:18:20.790+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/teste.py for tasks to queue
+[2025-04-20T07:18:20.793+0000] {logging_mixin.py:190} INFO - [2025-04-20T07:18:20.793+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/teste.py
+[2025-04-20T07:18:20.829+0000] {logging_mixin.py:190} INFO -      nomes
+0  wallace
+1   shalon
+2    italo
+3     luiz
+[2025-04-20T07:18:20.830+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/teste.py
+[2025-04-20T07:18:20.843+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/teste.py took 0.060 seconds
+[2025-04-20T07:18:42.133+0000] {processor.py:186} INFO - Started process (PID=347) to work on /opt/airflow/dags/teste.py
+[2025-04-20T07:18:42.135+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/teste.py for tasks to queue
+[2025-04-20T07:18:42.138+0000] {logging_mixin.py:190} INFO - [2025-04-20T07:18:42.138+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/teste.py
+[2025-04-20T07:18:42.211+0000] {logging_mixin.py:190} INFO -      nomes
+0  wallace
+1   shalon
+2    italo
+3     luiz
+[2025-04-20T07:18:42.212+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/teste.py
+[2025-04-20T07:18:42.229+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/teste.py took 0.105 seconds
+[2025-04-20T07:18:49.852+0000] {processor.py:186} INFO - Started process (PID=412) to work on /opt/airflow/dags/teste.py
+[2025-04-20T07:18:49.854+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/teste.py for tasks to queue
+[2025-04-20T07:18:49.855+0000] {logging_mixin.py:190} INFO - [2025-04-20T07:18:49.855+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/teste.py
+[2025-04-20T07:18:49.899+0000] {logging_mixin.py:190} INFO -      nomes
+0  wallace
+1   shalon
+2    italo
+3     luiz
+[2025-04-20T07:18:49.900+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/teste.py
+[2025-04-20T07:18:49.914+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/teste.py took 0.067 seconds
+[2025-04-20T07:19:02.011+0000] {processor.py:186} INFO - Started process (PID=480) to work on /opt/airflow/dags/teste.py
+[2025-04-20T07:19:02.012+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/teste.py for tasks to queue
+[2025-04-20T07:19:02.013+0000] {logging_mixin.py:190} INFO - [2025-04-20T07:19:02.013+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/teste.py
+[2025-04-20T07:19:02.043+0000] {logging_mixin.py:190} INFO -      nomes
+0  wallace
+1   shalon
+2    italo
+3     luiz
+[2025-04-20T07:19:02.044+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/teste.py
+[2025-04-20T07:19:02.060+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/teste.py took 0.056 seconds
+[2025-04-20T07:19:13.265+0000] {processor.py:186} INFO - Started process (PID=539) to work on /opt/airflow/dags/teste.py
+[2025-04-20T07:19:13.267+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/teste.py for tasks to queue
+[2025-04-20T07:19:13.269+0000] {logging_mixin.py:190} INFO - [2025-04-20T07:19:13.269+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/teste.py
+[2025-04-20T07:19:13.314+0000] {logging_mixin.py:190} INFO -      nomes
+0  wallace
+1   shalon
+2    italo
+3     luiz
+[2025-04-20T07:19:13.315+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/teste.py
+[2025-04-20T07:19:13.331+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/teste.py took 0.072 seconds
+[2025-04-20T07:19:19.602+0000] {processor.py:186} INFO - Started process (PID=599) to work on /opt/airflow/dags/teste.py
+[2025-04-20T07:19:19.605+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/teste.py for tasks to queue
+[2025-04-20T07:19:19.609+0000] {logging_mixin.py:190} INFO - [2025-04-20T07:19:19.608+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/teste.py
+[2025-04-20T07:19:19.759+0000] {logging_mixin.py:190} INFO -      nomes
+0  wallace
+1   shalon
+2    italo
+3     luiz
+[2025-04-20T07:19:19.762+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/teste.py
+[2025-04-20T07:19:19.780+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/teste.py took 0.188 seconds
+[2025-04-20T07:19:46.128+0000] {processor.py:186} INFO - Started process (PID=672) to work on /opt/airflow/dags/teste.py
+[2025-04-20T07:19:46.130+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/teste.py for tasks to queue
+[2025-04-20T07:19:46.131+0000] {logging_mixin.py:190} INFO - [2025-04-20T07:19:46.131+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/teste.py
+[2025-04-20T07:19:46.176+0000] {logging_mixin.py:190} INFO -      nomes
+0  wallace
+1   shalon
+2    italo
+3     luiz
+[2025-04-20T07:19:46.177+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/teste.py
+[2025-04-20T07:19:46.189+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/teste.py took 0.067 seconds
